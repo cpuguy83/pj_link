@@ -1,0 +1,1 @@
+require 'pj_link'
