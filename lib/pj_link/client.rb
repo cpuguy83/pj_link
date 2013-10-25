@@ -2,20 +2,12 @@ require 'net/telnet'
 
 module PjLink
   class Client
+    attr_accessor :gateway, :password
 
-    DEFAULT_PORT = 4352
-    attr_accessor :address, :password
     def initialize(address, password=nil)
-      @address = address
+      @gateway = Gateway.new(*address.split(':'))
       @password = password
-      parse_address
     end
-  private
-    def parse_address
-      if address =~ /:\n+/
-        @address, @port = *address.split(':')
-      else
-        @port = DEFAULT_PORT
 
     def command(cmd)
       gateway.send_message(cmd, @password)
