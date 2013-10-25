@@ -2,6 +2,9 @@
 
 A simple library for communicating over the PJLink protocol
 
+Based off of initial work by @macprince:
+https://github.com/macprince/ruby-pjlink
+
 ## Installation
 
 Add this line to your application's Gemfile:
