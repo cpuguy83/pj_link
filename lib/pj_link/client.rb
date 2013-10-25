@@ -1,4 +1,5 @@
 require 'net/telnet'
+require 'digest/md5'
 
 module PjLink
   class Client
