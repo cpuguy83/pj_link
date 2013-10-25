@@ -1,12 +1,12 @@
-# Pjlink
+# PjLink
 
-TODO: Write a gem description
+A simple library for communicating over the PJLink protocol
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'pjlink'
+    gem 'pj_link'
 
 And then execute:
 
@@ -14,11 +14,36 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install pjlink
+    $ gem install pj_link
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+projector = PjLink::Client.new '1.1.1.1', 'super_secret_password'
+projector.power_status
+```
+
+You can also use this without a password if your projector allows you too.
+
+Available commands are:
+ - power_on
+ - power_off
+ - power_status
+ - video_mute_on
+ - video_mute_off
+ - mute_on
+ - mute_off
+ - av_mute_on
+ - av_mute_off
+ - inputs
+ - set_input
+ - mute_status
+ - lamp_hours
+ - device_name
+ - manufacturer
+ - product
+ - pjlink_class
+ - other_info
 
 ## Contributing
 
