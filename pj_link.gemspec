@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = PjLink::VERSION
   spec.authors       = ["Brian Goff"]
   spec.email         = ["cpuguy83@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{A simple library for communicating over the PjLink protocol}
+  spec.summary       = %q{A simple library for communicating over the PjLink protocol}
   spec.homepage      = ""
   spec.license       = "MIT"
 
