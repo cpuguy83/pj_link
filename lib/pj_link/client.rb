@@ -140,7 +140,7 @@ module PjLink
           end
         end
 
-        @password_hash = Digest::MD5.hexdigest("#{key}#{password}") if auth_required
+        @password_hash = Digest::MD5.hexdigest("#{key}#{password}") unless auth_required == "0"
         self
       end
 
